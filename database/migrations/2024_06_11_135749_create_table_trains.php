@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('Stazione_Arrivo');
             $table->time('Orario_Partenza');
             $table->time('Orario_Arrivo');
-            $table->float('Codice_Treno');
+            $table->string('Codice_Treno')->uniqid();
             $table->float('Numero_carrozze');
             $table->boolean('In_orario');
             $table->boolean('Cancellato');
